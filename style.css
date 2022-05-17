@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  
+  
+  
+}
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(0,0,0); /* Black fallback color */
+  background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+ 
+body{
+  background: #f2f2f2;
+
+}
+
+.show,.icon,input{
+  display: none;
+}
+.fa-plus{
+  font-size: 10px;
+  margin-left: 40px;
+}
+
+ 
+  }
+  .show + a, ul{
+    display: none;
+  }
+  nav ul li,nav ul ul li{
+    display: block;
+    width: 100%;
+  }
+  nav ul li a:hover{
+    box-shadow: none;
+  }
+  .show{
+    display: block;
+    color: white;
+    font-size: 15px;
+    padding: 0 20px;
+    line-height: 70px;
+    cursor: pointer;
+  }
+  .show:hover{
+    color: cyan;
+  }
+  .icon{
+    display: block;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 40px;
+    line-height: 70px;
+    cursor: pointer;
+    font-size: 25px;
+  }
+  nav ul ul{
+    top: 70px;
+    border-top: 0px;
+    float: none;
+    position: static;
+    display: none;
+    opacity: 1;
+    visibility: visible;
+  }
+  nav ul ul a{
+    padding-left: 40px;
+  }
+  nav ul ul ul a{
+    padding-left: 80px;
+  }
+  nav ul ul ul li{
+    position: static;
+  }
+  [id^=btn]:checked + ul{
+    display: block;
+  }
+  nav ul ul li{
+    border-bottom: 0px;
+  }
+  span.cancel:before{
+    content: '\f00d';
+  }
+}
+.content{
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+header{
+  font-size: 20px;
+  font-weight: 600;
+  padding: 5px 0;
+}
+p{
+  font-size: 5px;
+  font-weight: 500;
+}
+.main{
+	line-height:1;
+}
+.main2{
+	line-height:1.1;
+}
+.main3{
+	line-height:1.2;
+}
+.main4{
+	line-height:1.3;
+}
+.main5{
+	line-height:1.4;
+}
+.main6{
+	line-height: 1.5;
+}
+.main7{
+	line-height:1.6;
+}
+.main8{
+	line-height: 1.7;
+}
+.main9{
+	line-height:1.8;
+}
+.main10{
+	line-height: 1.9;
+}
+.mainn{
+	line-height: 2.1
+}
+.main11{
+	line-height:2.2;
+}
+.main12{
+	line-height: 2.3;
+}
+.main13{
+	line-height: 2.4;
+}
+ .icon {
+  display: none;
+}
+.fixed-footer{
+        bottom: 0;
+    }
+    .container{
+        width: 80%;
+        margin: 0 auto;
+	}
+	.mainend{
+	line-height: 2.2;
+}
+.logo{
+	position:absolute;
+	margin-top:0px;
+	margin-left:0px;
+}
+@media only screen and (max-width: 989px) and (min-width: 768px) {
+  .responsive .mobile_menu_tablet .main_menu {
+  display: block;
+  }
+}
+.embed-twitter {
+width: 360px;
+height: 240px;
+}
+.twitter-tweet{
+	text-align:center;
+}
+
+
+
+tr{
+	background: black;
+	 border: 1px solid black;
+	color: white;
+}
+ .manny{
+	background: turquoise;
+	color: white;
+	width: 100%;
+}
+.mancure{
+	background: turquoise;
+	color: white;
+	width: 100%;
+}
+ td {
+        padding: 10px;
+        border: 1px solid black;
+ border-collapse: collapse;
+ width: 100%;
+ }
+ .raghav{
+	background: turquoise;
+	color: white;
+	width: 100%;
+}
+ td {
+        padding: 10px;
+        border: 1px solid black;
+ border-collapse: collapse;
+ width: 100%;
+ }
+  .aditya{
+	background: turquoise ;
+	color: white;
+	width: 100%;
+}
+ td {
+        padding: 10px;
+        border: 1px;
+	 border-collapse: collapse;
+	 width: 100%;
+ }
+ .poko{
+	background: black;
+	color: white;
+	
+}
+ td{
+        padding: 10px;
+        border: 3px groove;
+	 border-collapse: collapse;
+	
+} 
+ 
+	
